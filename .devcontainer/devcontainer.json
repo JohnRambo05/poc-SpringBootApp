@@ -1,0 +1,26 @@
+{
+  "name": "sample", // TODO 名前の決定
+  "dockerComposeFile": [
+    "./docker-compose.yml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/home",
+  "forwardPorts": [
+    8080
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack", // Java
+        "vmware.vscode-boot-dev-pack", // SpringBoot
+        "streetsidesoftware.code-spell-checker", // スペルミス
+        "mosapride.zenkaku", // 全角スペース
+        "oderwat.indent-rainbow", // インデント
+        "christian-kohler.path-intellisense", // パス
+        "Gruntfuggly.todo-tree", // やることリスト
+        "shardulm94.trailing-spaces", // 空白除去
+        "davidhouchin.whitespace-plus" // 制御文字
+      ]
+    }
+  }
+}
