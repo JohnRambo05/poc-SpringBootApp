@@ -14,12 +14,16 @@ services:
       - "./mysql/init/:/docker-entrypoint-initdb.d/"
       - "./mysql/config/mysql.cnf:/etc/mysql/conf.d/mysql.cnf"
   app:
-    image: maven:3.9.2-eclipse-temurin-17
+    # image: maven:3.9.2-eclipse-temurin-17
+    build:
+      context: ./springboot
+      dockerfile: Dockerfile
     container_name: springboot-app
     ports:
       - "8080:8080"
     volumes:
-      - "/Users/suzukiti/dev/JavaApp/project/:/home/"
+      # - "/Users/suzukiti/dev/JavaApp/project/:/home/"
+      - "/c/Users/h4039/dev/JavaApp/poc-SpringBootApp/:/home/poc-SpringBootApp/"
     command: /bin/bash
     tty: true
     depends_on:
