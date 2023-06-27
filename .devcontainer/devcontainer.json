@@ -4,7 +4,7 @@
     "./docker-compose.yml"
   ],
   "service": "app",
-  "workspaceFolder": "/home/poc-SpringBootApp",
+  "workspaceFolder": "/home/poc-SpringBootApp/app",
   "forwardPorts": [
     8080
   ],

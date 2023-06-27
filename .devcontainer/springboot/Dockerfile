@@ -1,2 +1,2 @@
-FROM maven:3.9.2-eclipse-temurin-17
+FROM eclipse-temurin:17.0.7_7-jdk-jammy
 RUN mkdir /home/poc-SpringBootApp
